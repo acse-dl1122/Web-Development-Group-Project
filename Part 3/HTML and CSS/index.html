@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!-- Section contain all invisible information about the page -->
+    <head>
+        <title>Cartoon Park Home Page</title>
+        <meta charset="utf-8">
+        <meta name="description" content="This is a homepage of a cartoon website, where you can have information and purchase your ticket">
+        <meta name="author" content="Group 68 (Tutor Group 07)">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="refresh" content="600">
+        <meta name="keywords" content="cartoon Park, theme park'">
+        <!--Calling my css-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    </head>
+    
+    <!-- This body section contains the structure for all the visble content -->
+    <body>
+        <header> <!-- start of the header of the page -->
+            <nav class="Mynavbar"> <!-- start of the navbar -->
+                
+                
+                <div id = "Mynavbar">
+                    <div style="min-width: 10%;">
+                    <!--Logo-->
+                        <a href="index.html" class="logo">
+                        <img src="img/CartoonPark.png" alt="Cartoon Park logo" width="55" height="55"></a>
+                    </div>
+                    <div  id="navLinks" style="min-width: 90%;" style="background: black;">
+                        <!--Home Page Button-->
+                        <a class="navSpace" href="index.html"><button id="navButtons">Cartoon Park - Home</button></a>
+
+                        <!--Events Button-->
+                        <a class="navSpace"  href="Event.html"><button id="navButtons">Events</button></a>
+
+                        <!-- Directs you to the google maps webpage with the address of the park -->
+                        <a class="navSpace" href="https://www.google.com/maps/place/Hyde+Park/@51.5072682,-0.1657303,15z/data=!4m5!3m4!1s0x0:0xd1af6c4f49b4bd0c!8m2!3d51.5072682!4d-0.1657303" target="_blank"><button id="navButtons">Location</button></a>
+
+                        <!-- a link that direct to the purchase page -->
+                        <a href="Purchase.html" class="navSpace"><button id="navButtons">Buy Ticket</button></a>
+                    </div>
+                </div>
+              
+            </nav><!-- / the navbar -->
+        </header> <!-- / header of the page -->
+        
+        <!--Opening times -->
+        <div id="Opening-Time">
+            <p style="display:inline">Monday - Sunday: <time>8:00</time> - <time>22:00</time></p>
+        </div>
+
+        
+        <!-- this section is about the covid-19 update information -->
+        <div id="covidInformation">
+            <h5><img  class="attention" src="img/Exclamation.png" alt="Caution icon" width="15" height="15"> Our Park is now open in line with the latest Goverment Guindace. Pre-booking is essential and some services may not be running as before. Learn more.</h5>
+        </div> 
+        
+        <!--this is a carousel, the code was taken and adapted from https://css-tricks.com/css-only-carousel/ where they teach how to do this carousel using only css->
+
+        <!--creates the ancoras that moves to the next slide, so if you are on the slide one the ancora directs you to the slide 2 if you click next or to the last slid if you click prev, if you are on the slide 2 directs you to 1 or 3, and so on.-->
+        
+        <section class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+                <li id="carousel__slide1"
+                    tabindex="0"
+                    class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide4"
+                           class="carousel__prev">Go to last slide</a>
+                        <a href="#carousel__slide2"
+                           class="carousel__next">Go to next slide</a>
+                    </div>
+                </li>
+                
+                <li id="carousel__slide2"
+                    tabindex="0"
+                    class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide1"
+                            class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide3"
+                            class="carousel__next">Go to next slide</a>
+                    </div>
+                </li>
+
+                <li id="carousel__slide3"
+                    tabindex="0"
+                    class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide2"
+                            class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide4"
+                            class="carousel__next">Go to next slide</a>
+                    </div>
+                </li>
+
+                <li id="carousel__slide4"
+                    tabindex="0"
+                    class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide3"
+                            class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide1"
+                            class="carousel__next">Go to first slide</a>
+                    </div>
+                </li>
+            </ol>
+
+            <aside class="carousel__navigation">
+                <ol class="carousel__navigation-list">
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide1"
+                        class="carousel__navigation-button">Go to slide 1</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide3"
+                        class="carousel__navigation-button">Go to slide 3</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide4"
+                        class="carousel__navigation-button">Go to slide 4</a>
+                    </li>
+                </ol>
+            </aside>
+        </section>        <!--  end of carousel page-->
+
+        <!--        this button was added for us to creat an ancora to the event page-->
+            <a href="Event.html"><button class="eventButton">EVENT</button></a>
+        
+        <!--this section is a Menu and containg all information about the park, each image would direct you to where you could find the information-->
+        
+        <div id="Menu">
+            
+            <div>
+                <button class="menuButtons" style=" margin-left:41%;">EVENTS</button>
+                <img class="imgBorder" class="menuSpace" src="img/Xmas.png" alt="Christmas tree"width="270" height="150">
+            </div>
+            
+            <div>
+                <button class="menuButtons" style=" margin-left:41%;">RIDES</button>    
+                <img  class="imgBorder" src="https://insidethemagic-119e2.kxcdn.com/wp-content/uploads/2019/04/Screen-Shot-2019-04-16-at-2.23.23-PM-800x400.png" alt="Rides" width="270" height="150">
+            </div>
+            
+            <div>
+                    <button class="menuButtons" style=" margin-left:41%;">BABIES</button>
+                    <img style=" margin-right:20%;"class="imgBorder" src="img/Baby.png" alt="Babies Feet" width="270" height="150">
+            </div>
+
+            <div>
+                    <button class="menuButtons" style=" margin-left:41%;">CALENDAR</button>
+                    <img style=" margin-right:20%;"class="imgBorder" src="img/Calendar.png" alt="Calendar" width="270" height="150">
+            </div>
+    
+            
+            <div>   <button class="menuButtons" style=" margin-left:41%;">FOODS</button>
+                    <img class="imgBorder" src="img/Food.png" alt="Hamburger" width="270" height="150">
+            </div>
+
+            <div>
+                    <button class="menuButtons" style=" margin-left:41%;">SHOPS</button>
+                    <img class="imgBorder" src="img/Gift.png" alt="Three Gifts" width="270" height="150">
+            </div>
+
+            <div>
+                    <button class="menuButtons" style=" margin-left:41%;"> &nbsp;MAPS&nbsp; </button>
+                    <img class="imgBorder" src="img/Map.png" alt="Map" width="270" height="150">
+            </div>
+            
+            <div>
+                    <button class="menuButtons" style=" margin-left:41%;">PARKING</button>
+                    <img class="imgBorder" src="img/Parking.png" alt="Cars Parking" width="270" height="150">
+            </div>
+     
+        </div><br/>
+
+        <!--this section is the map of the whole park showing each zone.
+            When you click each area or name the page would go down to where is some brief information of this area.-->
+        <div id="map">
+            <img class="imgBorder" src="https://i.pinimg.com/originals/24/4b/9a/244b9ae4978c9dd569fd2b334fc5ff9b.jpg" alt="Local Theme Park Map" width= "1024" height= "516" usemap="#localMap">
+            <map name="localMap">
+                <area shape="circle" coords="150,190,70" alt="Forbidden Valley" href="#Forbidden Valley">
+                <area shape="circle" coords="150,290,60" alt="Gloomy Wood" href="#Gloomy Wood">
+                <area shape="circle" coords="670,360,70" alt="Adventure Land" href="#Adventure Land">
+                <area shape="circle" coords="162,375,70" alt="Katanga Canyon" href="#Katanga Canyon">
+                <area shape="circle" coords="843,272,70" alt="X-Sector" href="#X-Sector">
+                <area shape="circle" coords="720,120,90" alt="Cred Street" href="#Cred Street">
+                <area shape="circle" coords="490,100,80" alt="UG-Land" href="#UG-Land">
+                <area shape="circle" coords="370,312,70" alt="Merrie England" href="#Merrie England">
+                <area shape="circle" coords="503,452,70" alt="MucDonald's farmyard" href="#MucDonald's farmyard">
+            </map>
+        </div>
+
+        <br/>
+        
+        <!--     descriptions of different events-->
+        <div>
+            
+            <div class="mapInfo">
+                <a id="Forbidden Valley">
+                    <img  class="imgBorder" src="https://i.ytimg.com/vi/LDxG4p121Ks/hqdefault.jpg" alt = 'Forbidden Vally Image' width="300" height="200">
+                </a>
+                    <div id="textMap" class="gapImgMap"  style="max-width: 50%;">
+                    <h3>Forbidden Valley</h3>
+                    <p >Archeologist Adam follows his father’s footsteps, hoping to find the mysterious Valley. On the long road to the cherished dream, various adventures and dangers, acquaintances and conflicts, secrets and puzzles await him. What is hidden in the ancient Forbidden Valley? This and many other secrets you will reveal!</p><button class="button">LEARN MORE</button>
+                    </div>
+            </div>
+
+            
+            <div class="mapInfo">
+                <a id="Gloomy Wood">
+                    <img class="imgBorder" src="https://cdn.shopify.com/s/files/1/0065/4917/6438/products/a-troll-warrior-with-his-spiked-mace-and-a-walkway-into-the-green-woods_1200x1200.jpg?v=1535766874" alt = 'Gloomy Wood Image' width="300" height="200">
+                </a>
+                <div id="textMap" class="gapImgMap"  style="min-width: 50%;">
+                    <h3 id="textMap">Gloomy Wood</h3>
+                     <p>Set deep within the ancient woodland of Alton Towers, Gloomy Wood is home to many of the park’s ghouls and goblins, who like.</p><button class="button">LEARN MORE</button>
+                </div>
+            </div>
+            
+
+            
+            <div class="mapInfo">
+                <a id="UG-Land">
+                    <img class="imgBorder" src="https://www.ocregister.com/wp-content/uploads/2018/07/0708_FEA_OCR-L-DIS-NILES-01.jpg?w=1860" alt = 'Cred Street Image'width="300" height="200">
+                </a>
+                <div id="textMap" class="gapImgMap"  style="max-width: 50%;">
+                    <h3>UG-Land</h3>
+                    <p  id="textMap">Looking for family-friendly rides and attractions? UG-Land has something for everyone!Whether it's a high-flying adventure on Merlin's Mayhem, a pacific-themed getaway in Duke's Lagoon, or a prehistoric expedition on Exploration Island, the kingdom has a royal adventure waiting for you!</p> <button class="button">LEARN MORE</button>
+                </div>
+            </div>
+            
+
+            
+            <div class="mapInfo">
+                <a id="Cred Street">
+                    <img class="imgBorder" src="https://d302e0npexowb4.cloudfront.net/wp-content/uploads/2017/01/5450ce1c6995b-polin-cartoon-network-amazone-wwa-award-2014.jpg" alt = 'Cred Street Image'width="300" height="200">
+                </a>
+                <div id="textMap" class="gapImgMap"  style="min-width: 50%;">
+                    <h3 id="textMap">Cred Street</h3>
+                    <p id="textMap">Meet and greets’ with characters from Cartoon Network will be a highlight!</p> <button class="button">LEARN MORE</button>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footerDiv">
+            <div class="footerDiv">
+                <!--this section talks about accessibility,  we used bootstrap to separeted in columns -->
+                <div  class="footerPg"style="max-width: 60%" >
+                    <h3>Accessibility Information</h3>
+                    <p class="acessText">At most of our attractions, the queue experience is an important part of telling the story of the overall attraction experience. All attraction queues are accessible to guests using manual wheelchairs (with the exception of Pteranodon Flyers™ in Universal's Islands of Adventure™—see an Attractions Attendant for assistance). There are specific boarding requirements and accommodations for those using wheelchairs at each attraction. If you’re capable of transferring to the ride vehicle seat either by yourself or with the assistance of someone in your party, you may transfer. To see a list of requirements and accommodations for all attractions, please speak with an attendant or see the <a href="#accessibility">Guide for Rider Safety and Accessibility</a></p>
+                </div>
+                <!--this is the footer with the contact and social media,  we used bootstrap to separeted in columns -->
+                <div class="footerPg" id="contactUS" style="min-width: 40%">
+                     <!-- We created a list and used differents ids to make it easier to find it -->
+                    <ul class="contact">
+                                Contact us: 
+                        <li id="number">Customer Helpline: 44 020 xxxx xxxx</li>
+                        <li id="email">E-mail: cartoonpark@gm.co</li>
+                        <li id="license">License Number: xxxxxx-xxx</li>
+                        <li id="Follow us" style="margin:10px;">            Follow us:
+                    <img src="img/Insta.svg" alt="Instagram Logo" width="30" height="30">
+                    <img src="img/Twitter.svg" alt="Twitter Logo" width="30" height="30">
+                    <img src="img/Face.svg" alt="Facebook Logo" width="30" height="30"></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+    
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!-- Section that contain all invisible information about the page -->
+    
+    <head>
+        <title>Cartoon Park Home Page</title>
+        <meta charset="utf-8">
+        <meta name="description" content="This is a Chritmas Event Page">
+        <meta name="author" content="Group 68 (Tutor Group 07)">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="refresh" content="600">
+        <meta name="keywords" content="cartoon Park, theme park, purchase'">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!--Calling my css-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/stylePurchase.css">
+    </head>
+    
+    <!-- This body section contains the structure for all the visble content -->
+    <body>
+        <div class="bodyLayer">
+        <div class="container">
+        <!-- the header of the page -->
+        <header>
+            
+           <nav class="Mynavbar"> <!-- start of the navbar -->
+
+                <!--Opening times -->
+                <div id="Opening-Time">
+                    <p style="display:inline">Monday - Sunday: <time>8:00</time> - <time>22:00</time></p>
+                </div>
+                
+                <div id = "Mynavbar">
+                    <!--Logo-->
+                    <div style="min-width: 10%;">
+                    <!--Logo-->
+                        <a href="index.html" class="logo">
+                        <img src="img/CartoonPark.png" alt="Cartoon Park logo" width="60" height="60"></a>
+                    </div>
+                    <div  id="navLinks" style="min-width: 90%;" style="background: black;">
+                        <!--Home Page Button-->
+                        <a class="navSpace" href="index.html"><button id="navButtons">Cartoon Park - Home</button></a>
+
+                        <!--Events Button-->
+                        <a class="navSpace"  href="Event.html"><button id="navButtons">Events</button></a>
+
+                        <!-- Directs you to the google maps webpage with the address of the park -->
+                        <a class="navSpace" href="https://www.google.com/maps/place/Hyde+Park/@51.5072682,-0.1657303,15z/data=!4m5!3m4!1s0x0:0xd1af6c4f49b4bd0c!8m2!3d51.5072682!4d-0.1657303" target="_blank"><button id="navButtons">Location</button></a>
+                    </div>
+                </div>
+                <!-- this section is about the covid-19 update information -->
+                <div class="covidInformation">
+                    <img class="attention" src="img/Exclamation.png" alt="Caution icon">
+                    <span> Our Park is now open in line with the latest Goverment Guindace. Pre-booking is essential and some services may not be running as before. Learn more.</span>
+                </div> 
+            </nav><!-- / the navbar -->
+            
+        </header> <!-- / header of the page -->
+        
+        
+        
+        <!-- title-->
+        <br/><div id= "passesTitle" >
+            <h1>What tickets or add-ons are you looking for?</h1> 
+        </div>
+        
+        <!-- this section display all the passes to buy -->
+        <div id = "passes">
+            <div  id="Season Pass" class="spacePasses">
+                <img class="ticket" src="img/seasonpass.png"alt="Season Pass image"><button class="purchaseButtons">add to cart</button>
+                 <div  class="ticketList">
+                    <h4>$180 / Quarter</h4><hr>
+                     <p>
+                        Save money with our  Season Pass<br/>
+                         Loads of rides and attractions<br/>
+                         Free parking<br/>
+                         <hr>
+
+                         <a href="" style="color: white">Parking Informatiom</a><br/>
+                         <a href="" style="color: white">Acommodation Informatiom</a>
+                     </p>
+                </div>
+            </div>
+            
+            <div id="Daily tickets" class="spacePasses">
+                <img class="ticket" src="https://cdn-cloudfront.cfauthx.com/binaries/content/gallery/vf-en-us/ctas/tickets/cf-daily-tickets-cta.jpg" alt="Daily ticket image"><button class="purchaseButtons">add to cart</button>
+                <div class="ticketList">
+                    <h4>$59.9/Person</h4><hr>
+                    <p>
+                        Good to use at Any Day<br/>
+                        Loads of rides and attractions<br/>
+                        Free parking<br/>
+                        <hr>
+                        <a href="" style="color: white">Parking Informatiom</a><br/>
+                        <a href="" style="color: white">Acommodation Informatiom</a>
+                    </p>
+                    
+                </div>
+            </div>
+            
+            <div class="spacePasses">
+                <img class="ticket" src="https://cdn-cloudfront.cfauthx.com/binaries/content/gallery/ca-en-us/ctas/tickets/ca-group-tickets-cta.jpg" alt="Groups ticket image"><button class="purchaseButtons">add to cart</button>
+                <div class="ticketList">
+                     <h4>$39.9 / Person</h4><hr>
+                    <p>
+                        Save with a Group of 15 or More<br/>
+                        Loads of rides and attractions<br/>
+                        Free parking<br/>
+                    <hr>
+                        <a href="" style="color: white">Parking Informatiom</a><br/>
+                        <a href="" style="color: white">Acommodation Informatiom</a>
+                    </p>
+                </div>
+            </div>
+            
+            <div id="Family" class="spacePasses">
+                <img class="ticket" src="https://www.littlebird.co.uk/blog/app/uploads/2019/03/Things-to-Know-LBFP.jpg" alt="Groups ticket image"><button class="purchaseButtons">add to cart</button>
+                <div class="ticketList">
+                    <h4>$39.9 / Adult & $29.9 / children</h4><hr>
+                     <p>
+                         Save with a Family Pass<br/>
+                         Loads of rides and attractions<br/>
+                         Free parking<br/>
+                        <hr>
+                        <a href="" style="color: white">Parking Informatiom</a><br/>
+                        <a href="" style="color: white">Acommodation Informatiom</a>
+                    </p>
+                </div>
+            </div>
+        </div><br/>
+
+        
+        <!-- this is the footer with the contact and social media -->
+        <footer class="footerPg">
+             <div class="footerDiv">
+                <!--this section talks about accessibility,  we used bootstrap to separeted in columns -->
+                <div  class="footerPg" style="max-width: 67%" >
+                    <h3 style = "padding: 0% 31%">Accessibility Information</h3>
+                    <p class="acessText">At most of our attractions, the queue experience is an important part of telling the story of the overall attraction experience. All attraction queues are accessible to guests using manual wheelchairs (with the exception of Pteranodon Flyers™ in Universal's Islands of Adventure™—see an Attractions Attendant for assistance). There are specific boarding requirements and accommodations for those using wheelchairs at each attraction. If you’re capable of transferring to the ride vehicle seat either by yourself or with the assistance of someone in your party, you may transfer. To see a list of requirements and accommodations for all attractions, please speak with an attendant or see the <a href="#accessibility">Guide for Rider Safety and Accessibility</a></p>
+                </div>
+                <!--this is the footer with the contact and social media,  we used bootstrap to separeted in columns -->
+                <div class="footerPg" id="contactUS" style="min-width: 10%">
+                     <!-- We created a list and used differents ids to make it easier to find it -->
+                    <ul class="contact">
+                                Contact us: 
+                        <li id="number">Customer Helpline: 44 020 xxxx xxxx</li>
+                        <li id="email">E-mail: cartoonpark@gm.co</li>
+                        <li id="license">License Number: xxxxxx-xxx</li>
+                        <li id="Follow us" style="margin:10px;">            Follow us:
+                    <img src="img/Insta.svg" alt="Instagram Logo" width="30" height="30">
+                    <img src="img/Twitter.svg" alt="Twitter Logo" width="30" height="30">
+                    <img src="img/Face.svg" alt="Facebook Logo" width="30" height="30"></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+      </div> 
+        </div>
+    </body>
+    
+</html>

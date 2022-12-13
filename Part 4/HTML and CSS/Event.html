@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Section that contain all invisible information about the page -->
+    <head>
+        <title>Cartoon Park Home Page</title>
+        <meta charset="utf-8">
+        <meta name="description" content="This is a Chritmas Event Page">
+        <meta name="author" content="Group 68 (Tutor Group 07)">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="refresh" content="600">
+        <meta name="keywords" content="cartoon Park, theme park, Event Park'">
+        <!--Calling my css-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/styleEvent.css">
+    </head>
+
+    <!-- This body section contains the structure for all the visble content -->
+    <body>
+        <div class="bodyLayer">
+        <div class="container">
+        <!-- the header of the page -->
+        <header>
+            
+             <nav class="Mynavbar"> <!-- start of the navbar -->
+
+                <!--Opening times -->
+                <div id="Opening-Time">
+                   <p style="display:inline">Monday - Sunday: <time>8:00</time> - <time>22:00</time></p>
+                </div>
+                
+                <div id = "Mynavbar">
+                     <!--Logo-->
+                   <div id="Logo" style="min-width: 10%;">
+                    <!--Logo-->
+                        <a href="index.html" class="logo">
+                        <img src="img/CartoonPark.png" alt="Cartoon Park logo" width="60" height="60"></a>
+                    </div>
+                    <div  id="navLinks" style="min-width: 90%;" style="background: black;">
+                        <!--Home Page Button-->
+                        <a class="navSpace" href="index.html"><button id="navButtons">Cartoon Park - Home</button></a>
+
+                        <!--Events Button-->
+                        <a class="navSpace"  href="Event.html"><button id="navButtons">Events</button></a>
+
+                        <!-- Directs you to the google maps webpage with the address of the park -->
+                        <a class="navSpace" href="https://www.google.com/maps/place/Hyde+Park/@51.5072682,-0.1657303,15z/data=!4m5!3m4!1s0x0:0xd1af6c4f49b4bd0c!8m2!3d51.5072682!4d-0.1657303" target="_blank"><button id="navButtons">Location</button></a>
+                    </div>
+                </div>
+                      <!-- this section is about the covid-19 update information -->
+                <div class="covidInformation">
+                    <img class="attention" src="img/Exclamation.png" alt="Caution icon">
+                    <span> Our Park is now open in line with the latest Goverment Guindace. Pre-booking is essential and some services may not be running as before. Learn more.</span>
+                </div> 
+            </nav><!-- / the navbar -->
+            
+        </header> <!-- / header of the page -->
+    
+        
+        <!--Promotional Video of the event.-->
+        <div id="promo">
+            <h1 class="eventTitle">Parade of Dreams</h1>
+            <!-- Let video auto play, loop and muted -->
+            <!--video source: Disney-->
+            <video class="paradevideo" controls="controls" autoplay="autoplay" loop="loop" muted>
+                <source src="/videos/parade.mp4" type="video/mp4">
+            </video>
+<!--            <iframe width="1000" alt="Main event video" height="550" src="https://www.youtube.com/embed/l4EjTEIYU_c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+        </div>
+            
+        <!-- fixed buy ticket button, showing everywhere on the page -->
+        <a href="Purchase.html" class="buyTicket">Buy Ticket</a>
+            
+        <div class="eventTextGrid">
+            <!-- Promotional Text about the event -->
+            <div class="promitionText">
+                <p>Once upon a time, a marvelous dreamer found the power to transform wishes into reality, and with just a sprinkle of pixie dust, a magical kingdom came alive for dreamers of all ages to enjoy. Soon the young at heart gathered from around the world, following their dreams to the place where anything is possible. The magic place where dreams come true. </p>
+            </div>
+
+            <!-- event time and location -->
+            <div id= "eventHourAndLocate">
+                <h2 class="eventInfoTitle">Show Times and Location</h2>
+                <a class="eventTime1 eventInfoText"><time>13:30</time>/<time>17:00</time></a>
+                <a class="eventLocation1 eventInfoText"> Small World to Main Street </a> <br>
+                <a class="eventTime2 eventInfoText"><time>20:30</time></a> 
+                <a class="eventLocation2 eventInfoText">Main Street to Small World</a>
+            </div>
+        </div>
+            
+        <!-- images of the event -->
+        <div id="imgEvent">
+            <img class="imgSpaceEvent" src="/img/Event%20images%201.jpg" alt = "Event images 1">
+            <img class="imgSpaceEvent" src="https://i.pinimg.com/originals/0a/31/3e/0a313e056bd088f139db72cbf23bb44d.jpg" alt = 'Event images 2'>
+            <img class="imgSpaceEvent" src="https://i.ytimg.com/vi/D0_gcm8gVGc/maxresdefault.jpg" alt = 'Event images 3'>
+            <img class="imgSpaceEvent" src="https://www.attraction-tickets.info/wp-content/uploads/2014/11/Wishes-Night-time-Spectacular.jpg" alt = 'Event images 4'>
+        </div>
+
+        <!-- reviews about the event -->
+        <div id= "reviews">
+            <img class="photo1 photos"src="img/Person.svg" alt="Person Picture">
+            <h4 class="name1 names">Kate W.</h4>
+            <q class="review1 reviews">This is one of my favorite holiday events. I am bummed that I won't be going this year due to the pandemic, but I'm hoping we can all celebrate next year. The actors do a great job of staying in character and the vendors are equally delightful. The entire experience will convince you that you are in a magic world. There are fun shows too. See them all. I've been a few times and still feel like there is more to see. Decent variety of worldwide food and drink and above all - good cheer!</q><br/><br/>
+           
+            <img class="photo2 photos" src="img/Person.svg" alt="Person Picture"> 
+            <h4 class="name2 names">Ricca Cathrina E.</h4>
+            <q class="review2 reviews">We had such a wonderful time! We arrived after 3pm to avail of the discounted tickets. There was a long line upon arrival which got longer shortly after arrival (perhaps due to the discounted rate).We left a little after 6 and it was just perfect. The kids were tired by then. Good experience for the kids.Performers, merchants and staff members were all friendly and nice. The restrooms were well kept.</q> 
+        </div><br/>
+
+        <!-- Information about the event, as map, parking and accommodation -->
+        <div id= "informations">
+            
+            <a href="img/Map2.jpg" download>
+                <img class="infoSpace" src="img/Map.svg" alt="Map" width="280" height=""><button class="infoButtons" style=" margin-left:41%;">MAP</button>
+            </a>
+            
+            <a href="#arrive" class="sliding-link">
+                <img class="infoSpace" src="img/Instruction.svg" alt="Instruction" width="280" height=""><button class="infoButtons" style=" margin-left:41%;">INFO</button>
+            </a>
+            
+            <a href="#parking" class="sliding-link">
+                <img class="infoSpace" src="img/Parking.svg" alt="Cars Parking" width="280" height=""><button class="infoButtons" style=" margin-left:35%;">PARKING</button>
+            </a>
+
+            <!-- Sharable link, just for display now -->
+            <a href="#parking" class="sliding-link">
+            <img class="infoSpace" src="https://i.pinimg.com/736x/eb/a7/2e/eba72e5dc96ca156f491aebf571321a9.jpg" alt = 'Share to social media link' width="280" height="193"><button class="infoButtons" style=" margin-left:41%;">SHARE</button>
+            </a>
+
+        </div>
+
+        <!-- this is the footer with the contact and social media -->
+        <footer class="footerPg">
+             <div class="footerDiv">
+                <!--this section talks about accessibility,  we used bootstrap to separeted in columns -->
+                <div  class="footerPg" style="max-width: 67%" >
+                    <h3 style = "padding: 0% 31%">Accessibility Information</h3>
+                    <p class="acessText">At most of our attractions, the queue experience is an important part of telling the story of the overall attraction experience. All attraction queues are accessible to guests using manual wheelchairs (with the exception of Pteranodon Flyers™ in Universal's Islands of Adventure™—see an Attractions Attendant for assistance). There are specific boarding requirements and accommodations for those using wheelchairs at each attraction. If you’re capable of transferring to the ride vehicle seat either by yourself or with the assistance of someone in your party, you may transfer. To see a list of requirements and accommodations for all attractions, please speak with an attendant or see the <a href="#accessibility">Guide for Rider Safety and Accessibility</a></p>
+                </div>
+                <!--this is the footer with the contact and social media,  we used bootstrap to separeted in columns -->
+                <div class="footerPg" id="contactUS" style="min-width: 10%">
+                     <!-- We created a list and used differents ids to make it easier to find it -->
+                    <ul class="contact">
+                                Contact us: 
+                        <li id="number">Customer Helpline: 44 020 xxxx xxxx</li>
+                        <li id="email">E-mail: cartoonpark@gm.co</li>
+                        <li id="license">License Number: xxxxxx-xxx</li>
+                        <li id="Follow us" style="margin:10px;">            Follow us:
+                    <img src="img/Insta.svg" alt="Instagram Logo" width="30" height="30">
+                    <img src="img/Twitter.svg" alt="Twitter Logo" width="30" height="30">
+                    <img src="img/Face.svg" alt="Facebook Logo" width="30" height="30"></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div> 
+    </div>
+    </body>
+    
+</html>

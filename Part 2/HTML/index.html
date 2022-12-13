@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!-- Section contain all invisible information about the page -->
+    <head>
+        <title>Cartoon Park Home Page</title>
+        <meta charset="utf-8">
+        <meta name="description" content="This is a homepage of a cartoon website, where you can have information and purchase your ticket">
+        <meta name="author" content="Group 68 (Tutor Group 07)">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="refresh" content="600">
+        <meta name="keywords" content="cartoon Park, theme park'">
+        <link rel="stylesheet" type="text/css" href="StyleSheet/style.css">
+    </head>
+    
+    <!-- This body section contains the structure for all the visble content -->
+    <body>
+
+        <!-- the header of the page -->
+        <header>
+            
+            <!-- Logo and website's name that directs to the HomePage-->
+            <a href="index.html">
+            <img src="img/CartoonPark.svg" alt="Cartoon Park logo" width="100" height="100">
+            </a>
+            <a href="index.html">Cartoon Park - Home</a> |
+            
+            <!-- time tags is used which helps user to search -->
+            <p style="display:inline">Monday - Sunday: <time>8:00</time> - <time>22:00</time></p> |
+            
+            <!-- Directs you to the google maps webpage with the address of the park -->
+            <a href="https://www.google.com/maps/place/Hyde+Park/@51.5072682,-0.1657303,15z/data=!4m5!3m4!1s0x0:0xd1af6c4f49b4bd0c!8m2!3d51.5072682!4d-0.1657303" target="_blank">Location
+            </a> |
+            
+            <!-- a link that direct to the purchase page -->
+            <a href="Purchase.html">Buy Ticket</a>
+        </header>
+        
+        <!-- this section is about the covid-19 update information -->
+        <div id="covidInformation">
+            <img src="https://previews.123rf.com/images/jasonksleung/jasonksleung1404/jasonksleung140400009/27158272-caution-icon.jpg" alt="Caution icon" width="50" height="50">
+            <h3>Important Information about the Cartoon theme park</h3>
+            <ul>
+                <li>We have taken enhanced health and safety measures. An inherent risk of exposure to COVID-19 exists in any public place where people are present. <a href="#Covid details">View important details.</a></li>
+                <li>Certain parks, hotels, restaurants and other offerings may be modified or unavailable, limited in capacity and subject to limited availability or closure, and park admission and offerings are not guaranteed. <a href="#Covid details">View important details.</a></li>
+                <li>To enter a park, both a park reservation and valid admission for the same park on the same date are required for Guests ages 3 and up. <a href="#Learn more">Learn more.</a></li>
+            </ul>
+        </div>
+        
+        <!-- this section contains the big image of the main event and click to the main event Page -->
+        <div id="carousel">
+            <a href="Event.html">
+                <img src = "img/Carousel.svg" alt="Carousel" width = "1000" height = "350">
+            </a>
+        </div><br/>
+
+        <!-- this section is a Menu and containg all information about the park, each image directs to where you can find the information -->
+        <div id="Menu"> 
+            <a href="#Events" class="sliding-link">
+                <img src="img/Xmas.svg" alt="Christmas tree" width="200" height="100">
+            </a>
+
+                Events
+
+            <a href="#rides" class="sliding-link">
+                <img src="https://insidethemagic-119e2.kxcdn.com/wp-content/uploads/2019/04/Screen-Shot-2019-04-16-at-2.23.23-PM-800x400.png" alt="Rides" width="180" height="100">
+            </a>
+
+                Rides
+
+            <a href="#baby" class="sliding-link">
+                <img src="img/Baby.svg" alt="Babies Feet" width="200" height="100">
+            </a>
+
+
+               Kids Information
+
+
+            <a href="#times" class="sliding-link">
+                <img src="img/Calendar.svg" alt="Calendar" width="200" height="100">
+            </a>
+
+               Times of Events <br>
+
+
+            <a href="#food" class="sliding-link">
+                <img src="img/Food.svg" alt="Hamburger" width="200" height="100">
+            </a>
+
+
+               Food
+
+
+            <a href="#shopping" class="sliding-link">
+                <img src="img/Gift.svg" alt="Three Gifts" width="200" height="100">
+            </a>
+
+
+               Shops/Gifts
+
+
+            <a href="#parking" class="sliding-link">
+                <img src="img/Parking.svg" alt="Cars Parking" width="200" height="100">
+            </a>
+
+
+               Hotels/Parking
+
+
+            <a href="img/Map2.jpg" download>
+                <img src="img/Map.svg" alt="Map" width="200" height="100">
+            </a>
+
+               Download Map <br> 
+        </div>
+        <br/><br/><br/>
+
+    <!-- this section is the map of the whole park showing each zone.
+        When you click each area or name the page would go down to where is some brief information of this area.-->
+    <div>
+        <img src="https://i.pinimg.com/originals/24/4b/9a/244b9ae4978c9dd569fd2b334fc5ff9b.jpg" alt="Local Theme Park Map" width= "1024" height= "516" usemap="#localMap">
+        <map name="localMap">
+            <area shape="circle" coords="150,190,70" alt="Forbidden Valley" href="#Forbidden Valley">
+            <area shape="circle" coords="150,290,60" alt="Gloomy Wood" href="#Gloomy Wood">
+            <area shape="circle" coords="670,360,70" alt="Adventure Land" href="#Adventure Land">
+            <area shape="circle" coords="162,375,70" alt="Katanga Canyon" href="#Katanga Canyon">
+            <area shape="circle" coords="843,272,70" alt="X-Sector" href="#X-Sector">
+            <area shape="circle" coords="720,120,90" alt="Cred Street" href="#Cred Street">
+            <area shape="circle" coords="490,100,80" alt="UG-Land" href="#UG-Land">
+            <area shape="circle" coords="370,312,70" alt="Merrie England" href="#Merrie England">
+            <area shape="circle" coords="503,452,70" alt="MucDonald's farmyard" href="#MucDonald's farmyard">
+        </map>
+    </div>
+
+        <br/><br/><br/> 
+        
+    <!-- descriptions for different events -->
+    <div>
+        <a id="Forbidden Valley">
+            <img src="https://i.ytimg.com/vi/LDxG4p121Ks/hqdefault.jpg" alt = 'Forbidden Vally Image' width="300" height="200">
+            <h3>Forbidden Valley</h3>
+            <pre>Archeologist Adam follows his father’s footsteps, hoping to find the mysterious Valley. 
+On the long road to the cherished dream, various adventures and dangers, acquaintances and 
+conflicts, secrets and puzzles await him. What is hidden in the ancient Forbidden Valley? 
+This and many other secrets you will reveal! <button>learn more</button></pre>
+        </a>
+        <a id="Gloomy Wood">
+            <img src="https://cdn.shopify.com/s/files/1/0065/4917/6438/products/a-troll-warrior-with-his-spiked-mace-and-a-walkway-into-the-green-woods_1200x1200.jpg?v=1535766874" alt = 'Gloomy Wood Image' width="300" height="200">
+            <h3>Gloomy Wood</h3>
+            <pre>Set deep within the ancient woodland of Alton Towers, Gloomy Wood is home to many of 
+the park’s ghouls and goblins, who like nothing more than to play with unwary 
+adventurers...<button>learn more</button></pre>
+        </a>
+        <a id="UG-Land">
+            <img src="https://www.ocregister.com/wp-content/uploads/2018/07/0708_FEA_OCR-L-DIS-NILES-01.jpg?w=1860" alt = 'Cred Street Image'width="300" height="200">
+            <h3>UG-Land</h3>
+            <pre>Looking for family-friendly rides and attractions? UG-Land has something for everyone! 
+Whether it's a high-flying adventure on Merlin's Mayhem, a pacific-themed getaway in Duke's 
+Lagoon, or a prehistoric expedition on Exploration Island, the kingdom has a royal adventure 
+waiting for you! <button>learn more</button></pre>
+        </a>
+        <a id="Cred Street">
+            <img src="https://d302e0npexowb4.cloudfront.net/wp-content/uploads/2017/01/5450ce1c6995b-polin-cartoon-network-amazone-wwa-award-2014.jpg" alt = 'Cred Street Image'width="300" height="200">
+            <h3>Cred Street</h3>
+            <pre>Meet and greets’ with characters from Cartoon Network will be a highlight! <button>learn more</button></pre    >
+        </a>
+    </div><br/><br/>
+        
+        <!-- this section talks about accessibility -->
+        <div id="accessibility">
+            <h3>Accessibility Information</h3>
+            <pre>At most of our attractions, the queue experience is an important part of telling the story 
+of the overall attraction experience. All attraction queues are accessible to guests using 
+manual wheelchairs (with the exception of Pteranodon Flyers™ in Universal's Islands of Adventure™—see 
+an Attractions Attendant for assistance). There are specific boarding requirements and accommodations 
+for those using wheelchairs at each attraction. If you’re capable of transferring to the ride vehicle 
+seat either by yourself or with the assistance of someone in your party, you may transfer. To see 
+a list of requirements and accommodations for all attractions, please speak with an attendant or see 
+the <a href="#accessibility">Guide for Rider Safety and Accessibility</a></pre>
+        </div>
+
+        <br> 
+        
+        <!-- this is the footer with the contact and social media -->
+        <footer>
+            <div id="contactInfo">
+                Contact us: 
+                
+                 <!-- We created a list and used differents ids to make it easier to find it -->
+                <ul>
+                    <li id="number">Customer Helpline: 44 020 xxxx xxxx</li>
+                    <li id="email">E-mail: cartoonpark@gm.co</li>
+                    <li id="license">License Number: xxxxxx-xxx</li>
+                </ul>
+            </div>
+            
+            <!-- Social Media Images-->
+            <div id="socialMedia">
+                 Follow us:
+
+                <img src="img/Insta.svg" alt="Instagram Logo" width="30" height="30">
+                <img src="img/Twitter.svg" alt="Twitter Logo" width="30" height="30">
+                <img src="img/Face.svg" alt="Facebook Logo" width="30" height="30">
+            </div>
+        </footer>
+
+    </body>
+    
+</html>

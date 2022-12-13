@@ -1,0 +1,605 @@
+/*no margin for the body so the page have the same size of the widown*/
+body{
+    margin:0px;
+}
+
+/*edit the navbar*/
+#Mynavbar{
+    z-index: 99;
+    overflow: hidden;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background:	rgb(95,158,160);
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+    box-shadow: 0px 10px -14px 14px #FFF;
+}
+
+/*Buttons of the Navbar*/
+#navButtons{
+    position: relative;
+    right:70px;
+    top: 23%;
+    background-color: rgb(95,158,160);
+    border: none;
+    border-radius: 15px;
+    color: rgb(255,255,255);
+    font-weight: bold;
+    padding: 4px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+}
+/*add space between the navbar elements*/
+.navSpace{
+    margin-right: 2%;
+}
+
+/*change de color once the mouse is on top off it*/
+#navButtons:hover{
+        background-color: rgb(255,255,255);
+        color: 	rgb(95,158,160);
+        font-family: Tahoma, "Trebuchet MS", sans-serif; 
+}
+
+/*place the logo at the right spot on the navbar*/
+.logo{
+    display: inline-block;
+    cursor: pointer;
+}
+
+/*add the opening time on top of the navbar*/
+#Opening-Time{
+    text-align:center;
+    background-color: rgb(95,158,160);
+    color: 	rgb(255,255,255);
+    padding: 4px;
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+}
+
+/*edit the covid information under the navbar*/
+#covidInformation h5{
+    position: static;
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+    font-size: 15px;
+    background-color: rgb(95,158,160);
+    padding: 5 px;
+    text-align: center;
+    color: 	rgb(255,255,255);
+    margin:0em;
+}
+
+/*place the exclamation point on the covid bar*/
+.attention{
+    position:relative;
+    margin-right: 1%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/*edit the Menu*/
+#Menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 16.7%;
+    margin-top: 1.5%;
+}
+
+/*edit and place the buttons of the menu on the right place*/
+.menuButtons{
+    position:relative;
+    top:80%;
+    right:15%;
+    width:30%;
+    z-index: 1;
+    margin-bottom: 2%;
+    border-radius: 15px;
+    background-color: rgb(95,158,160);
+    border: none;
+    color: 	rgb(255,255,255);
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+}
+/*change the color of the buttons once the mouse is on top of them*/
+.menuButtons:hover {
+    background-color: rgb(255,255,255);
+    color: rgb(95,158,160);
+    font-family: Tahoma, "Trebuchet MS", sans-serif; 
+}
+
+/*put the map on the center*/
+#map{
+    text-align: center;
+}
+
+/*create a border around some images*/
+.imgBorder{
+        border: 8px solid rgb(95,158,160);
+        border-radius: 15px;
+}
+
+/*display the images by the side of the texts about the map*/
+.mapInfo{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5%;
+    justify-content: center;
+    align-items: center;
+}
+/*creates a gap between the image and the text*/
+.gapImgMap{
+    margin: 1%;
+}
+
+/*edit the buttons of the text*/
+.button{
+    position: relative;
+    background-color: rgb(255,255,255);
+    border: none;
+    border-radius: 15px;
+    color: rgb(95,158,160);
+    padding: 4px;
+    text-align: center;
+    font-size: 16px;
+    z-index: 1;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+    font-weight: bold;
+}
+
+/*change the color of the buttons once the mouse is on top of them*/
+.button:hover {
+    background-color: rgb(95,158,160);
+    color: 	rgb(255,255,255);
+    font-family: Tahoma, "Trebuchet MS", sans-serif; 
+}
+/*edit the text and images with informations about the map*/
+#textMap{
+    margin:25px;
+    text-align: center;
+    border-radius: 15px;
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+    background-color: rgb(95,158,160);
+    border-top: 1px solid rgb(95,158,160);
+    color: 	rgb(255,255,255);
+}
+
+/*creates a margin between the images and the text*/
+
+#imgMap{
+        margin: 15px;
+}
+
+.footerDiv{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5%;
+}
+/*edits the footer*/
+.footerPg{
+        text-align: center;
+        position: center;
+        font-family: Tahoma, "Trebuchet MS", sans-serif;
+        background-color: rgb(95,158,160);
+        color: 	rgb(255,255,255);
+}
+
+/*edits the accessibility text and separete it in two columns*/
+.acessText{
+    column-count: 2;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    text-align: justify;
+    margin-left: 2%;
+    column-gap: 30px;
+}
+
+/*edits the contact text*/
+.contact{
+    list-style-type: none;
+}
+
+
+/*edits the button on top of the carousel that we create to direct you to the Events page */
+.eventButton{
+    position:relative;
+    top:-10%;
+    width:10%;
+    z-index:  1;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    color: 	rgb(255,255,255);
+    text-align: center;
+    transform: translate(450%, -50%);
+   -ms-transform: translate(-50%, -50%);
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+    font-size: 50px;
+}
+
+/*change the color of the buttons once the mouse is on top of them*/
+.eventButton:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: 	rgb(0,0,0);
+    font-family: Tahoma, "Trebuchet MS", sans-serif; 
+}
+
+
+/*Start of Carousel css code. Taken and adapted https://css-tricks.com/css-only-carousel/ where they teach how to do this carousel using only css.*/
+
+@keyframes tonext {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: 100%;
+  }
+  98% {
+    left: 100%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes tostart {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: -300%;
+  }
+  98% {
+    left: -300%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes snap {
+  96% {
+    scroll-snap-align: center;
+  }
+  97% {
+    scroll-snap-align: none;
+  }
+  99% {
+    scroll-snap-align: none;
+  }
+  100% {
+    scroll-snap-align: center;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-width: 0px;
+}
+
+/*Edits the scrollbar.*/
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+* {
+  -ms-overflow-style: none;
+}
+
+/*Take it off the dots and margins of the lists that creates the carousel*/
+ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*change the size of the carousel*/
+.carousel {
+  position: relative;
+  padding-top: 30%;
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
+}
+
+/*controls the carousel position*/
+.carousel__viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+/*place the image*/
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+    background-image: url("/img/Carousel1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*I change this part to place more images*/
+.carousel__slide:nth-child(2) {
+ background-image: url("/img/Carousel2.png");
+}
+
+.carousel__slide:nth-child(3) {
+ background-image: url("/img/Carousel3.png");
+}
+
+.carousel__slide:nth-child(4) {
+ background-image: url("/img/Carousel4.png");
+}
+
+/*Controls the images and the slide*/
+.carousel__snapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+}
+
+/*creates the transition between the images*/
+@media (hover: hover) {
+  .carousel__snapper {
+    animation-name: tonext, snap;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+/*creates the transition between the images*/
+  .carousel__slide:last-child .carousel__snapper {
+    animation-name: tostart, snap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__snapper {
+    animation-name: none;
+  }
+}
+
+.carousel:hover .carousel__snapper,
+.carousel:focus-within .carousel__snapper {
+  animation-name: none;
+}
+
+.carousel__navigation {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.carousel__navigation-list,
+.carousel__navigation-item {
+  display: inline-block;
+}
+
+/*Edits the navegation buttons on the bottom of the carousel*/
+.carousel__navigation-button {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #333;
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
+}
+
+/*Edits the buttons responsible for the next and left, also assigns them*/
+.carousel::before,
+.carousel::after,
+.carousel__prev,
+.carousel__next {
+  position: absolute;
+  top:0;
+    margin-top: 17.5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 4rem;
+    height: 4rem;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 0;
+    outline: 0;
+}
+
+.carousel::before,
+.carousel__prev {
+  left: -1rem;
+}
+
+.carousel::after,
+.carousel__next {
+  right: -1rem;
+}
+
+.carousel::before,
+.carousel::after {
+  content: '';
+  z-index: 1;
+  background-color: #333;
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+/*The image of the buttons*/
+.carousel::before {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+.carousel::after {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+/*end of carousel code*/
+    
+/*EVENT PAGE*/
+
+/*Edits the video and promotional text about it*/
+#promo{
+    text-align: center;
+    background-color: rgb(95,158,160);
+    color:	rgb(255,255,255);
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+    margin: 0px;
+}
+
+/*Edits the event time and information*/
+#eventHour{
+    background-color: rgb(95,158,160);
+    margin:auto;
+    width: 50%;
+    color: 	rgb(255,255,255);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.eventText{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0em;
+}
+
+/*Edits the image of the event*/
+#imgEvent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.5%; 
+}
+
+
+/*Adds space between the images using margin*/
+.imgSpaceEvent{         
+    margin: 0% 0.5% 0% 1%;
+    border: 8px solid rgb(95,158,160);
+    border-radius: 15px;
+}
+
+
+/*Edits the reviews*/
+#reviews{
+    margin: 3% 15% 0% 15%;
+    text-align: justify;
+    border: 8px solid rgb(95,158,160);
+    border-radius: 15px;
+    padding:1%;
+}
+
+/*Edits the Information Menu about the event*/
+#informations{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.5%; 
+}
+
+
+/*Adds space between the images using margin.*/
+.infoSpace{
+    margin: 0% 0.5% 0% 1%;
+    border: 8px solid rgb(95,158,160);
+    border-radius: 15px;
+}
+
+/*PURCHASE PAGE*/
+
+#passesTitle{
+    text-align: center;
+    color:	rgb(255,255,255);
+    border:4px solid rgb(95,158,160);
+    background-color: rgb(95,158,160);
+}
+
+/*Edits the passes, placing them on the middle.*/
+#passes{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.5%;
+}
+
+/*Edits and Adds the bottons on the right place.*/
+.purchaseButtons{
+    position:relative;
+    top:-6%;
+    width:30%;
+    z-index: 1;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    background-color: rgb(95,158,160);
+    border: none;
+    color: 	rgb(255,255,255);
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+}
+
+/*Changes the colour of the buttons once tou place the mouse on top of it.*/
+.purchaseButtons:hover {
+    background-color: 	rgb(255,255,255);
+    color: rgb(95,158,160);
+    font-family: Tahoma, "Trebuchet MS", sans-serif; 
+}
+
+/*Edits the image of the tickets adding a border.*/
+.ticket{
+    margin:2%;
+    text-align: center;
+    border: 5px solid rgb(95,158,160);
+    border-radius: 15px;
+}
+
+/*Edits the text under the passes.*/
+.ticketList{
+    border: 5px solid rgb(95,158,160);
+    background-color: rgb(95,158,160);
+    color: 	rgb(255,255,255);
+    border-radius: 15px;
+    margin:2%;
+    text-align: center;
+}

@@ -1,0 +1,446 @@
+/*set margin and gradient backgroud image for the body*/
+body{
+    margin-left: 0%;
+    margin-right: 0%;
+    z-index: -2;
+    background-image:url('https://images.unsplash.com/photo-1525351159099-81893194469e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1046&q=80');
+    opacity: 1; 
+}
+
+.bodyLayer{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: linear-gradient(120deg, rgba(224, 195, 252, 0.6) 0%, rgba(142, 197, 252, 0.6) 100%);
+    
+}
+
+/*wrap the content section as a whole and add shadow*/
+.container{
+    z-index: 0;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: -12%;
+    margin-bottom: -5%;
+    background-color: rgba(255,255,255,0.3);
+    box-shadow: 5px 9px 13px 15px rgba(128,128,128,0.7);
+} 
+
+/*When the page scrolls down, 'Buy Ticket'
+will always in the right side of viewport*/
+.buyTicket{
+    z-index: 5;
+    position: sticky;
+    top: 2%;
+    float: right;
+    margin-right: -11%;
+    margin-top: -2%;
+    width: 17%;
+    background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+    border-radius: 9px;
+    text-align: center;
+    color: rgb(255,255,255);
+    font-size: 1.4vw;
+    text-decoration: none;
+    padding: 8px 40px 8px 40px;
+    box-shadow: 4px 4px 1px 2px rgba(100,100,100,0.75);  
+}
+
+.buyTicket:hover {
+    background-image: linear-gradient(-225deg, #FF057C 0%, #7C64D5 48%, #4CC3FF 100%);
+    font-family: Tahoma, "Trebuchet MS", sans-serif; 
+    font-size: 1.5vw;
+    width: 20%;
+}
+
+/*edit the navbar*/
+header{
+    position: fixed;
+    z-index: 2;
+    width: 76%;
+    top:0;
+}
+#Mynavbar{
+    display: flex;
+    width: 100%;
+    background:	rgb(255,255,255);
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+}
+
+/*Buttons of the Navbar*/
+#navButtons{
+    position: relative;
+    right: 5vw;
+    top: 0vw;
+    background-color: rgb(255,255,255);
+    border: none;
+    border-radius: 15px;
+    color: rgb(95,158,160);
+    font-weight: bold;
+    margin-top: 0.8vh;
+    padding: 0.3vw;
+    text-align: center;
+    font-size: 1.5vw;
+    cursor: pointer;
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+}
+/*add space between the navbar elements*/
+.navSpace{
+    margin-right: 2%;
+}
+
+/*change de color once the mouse is on top off it*/
+#navButtons: hover {
+        background-color: rgb(95,158,160);
+        color: rgb(255,255,255);
+        font-family: Tahoma, "Trebuchet MS", sans-serif; 
+}
+
+/*place the logo at the right spot on the navbar*/
+.logo{
+    display: inline-block;
+    cursor: pointer;
+}
+
+/*add the opening time on top of the navbar*/
+#Opening-Time{
+    width: 99.3%;
+    height: 35%;
+    text-align:center;
+    background-color: rgb(95,158,160);
+    color: rgb(255,255,255);
+    padding: 4px;
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+}
+
+/*edit the covid information under the navbar*/
+.covidInformation {
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+    font-size: 0.8vw;
+    background-color: rgb(95,158,160);
+    text-align: center;
+    padding-bottom: 1vh;
+    color: 	rgb(255,255,255);
+    margin:0em;
+}
+
+/*place the exclamation point on the covid bar*/
+.attention{
+    position:relative;
+    margin-right: 1%;
+    display: inline-block;
+    cursor: pointer;
+    width: 1vw;
+    height: 1.6vh;
+    margin-top: 0.8vh;
+}
+
+/*When the page scrolls down, 'Buy Ticket'
+will always in the right side of viewport*/
+.buyTicket{
+    z-index: 5;
+    position: sticky;
+    top: 4%;
+    float: right;
+    margin-right: 2%;
+    margin-top: 1%;
+    width: 17%;
+    background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+    border-radius: 9px;
+    text-align: center;
+    color: rgb(255,255,255);
+    font-size: 1.4vw;
+    text-decoration: none;
+    padding: 8px 10px 8px 10px;
+    box-shadow: 4px 4px 1px 2px rgba(100,100,100,0.75);  
+}
+
+.buyTicket:hover {
+    background-image: linear-gradient(-225deg, #FF057C 0%, #7C64D5 48%, #4CC3FF 100%);
+    font-family: Tahoma, "Trebuchet MS", sans-serif; 
+    font-size: 1.5vw;
+    width: 20%;
+}
+
+/*edit the Menu*/
+.Menu {
+    width: 72vw;
+    height: 18vw;
+    margin-left: 4%;
+    margin-top: 4%;
+    overflow: hidden;
+    transition: all .3s;
+    border-radius: 10px;
+}
+
+/*This wrap the image and text area*/
+.menuimage{
+    float: left;
+    position: relative;
+    width: 8.4vw;
+    height: 13vw;
+    transition: all .3s;
+    margin-left: 1vw;
+    margin-top: 2vw;
+    border-radius: 10px;
+    background: radial-gradient(rgb(255,255,255), rgb(0,0,0));
+}
+
+/*menu-image property*/
+.menuPic{
+    width: 100%;
+    height: 13vw;
+    border-radius: 10px;
+    box-shadow: 8px 5px 2.5px 3px rgba(128,128,128,0.7);
+}
+
+/*menu-text property*/
+.menuText{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 1vw;
+    color: white;
+    width: 100%;
+    text-align: center;
+    line-height: 1.2vw;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,.3);
+}
+
+/*hover effect of the menu*/
+/*make the image(including text area) move upwards and become wider*/
+.menuimage:hover {
+    width: 17%;
+    z-index: 100;
+    margin-top: -2px;
+}
+
+/*make the image darker*/
+.menuimage:hover img{
+    opacity: 0.65;
+    border-radius: 13px;
+}
+
+/*make the text more noticable*/
+.menuimage:hover .menuText{
+    font-size: 1.3vw;
+    line-height: 1.3vw;
+    border-radius: 6px;
+    background-color: rgba(0,0,0,.5);
+}
+
+/*put the map on the center*/
+#map{
+    text-align: center;
+}
+
+.mapP{
+    box-shadow: 8px 5px 2.5px 3px rgba(128,128,128,0.7);
+    border-radius: 12px;
+}
+
+/*This is the introduction of different zone in map. There are two kinds of grid: Picture at left and picture at right.*/
+.gridContainer{
+    display: grid;
+    width: 95%;
+    height: 22vh;
+    margin-top: 1.5%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 8px;
+    border-radius: 5px;
+    align-content: center;
+    box-shadow: 8px 3px 2.5px 3px rgba(128,128,128,0.7);
+}
+
+.gridGradientleft{
+    background-image: linear-gradient(to left, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+}
+
+.gridGradientright{
+    background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+}
+
+.gridPicLeft{
+    grid-column: 1 / span 1; 
+}
+
+.gridTextRight{
+    grid-column: 2/ span 3;
+    
+}
+
+.gridImg{
+    width: 93%;
+    height: 22vh;
+    border-radius: 6px;
+    margin-top: 5%;
+}
+
+.gridText{
+    width: 90%;
+    height: 100%;
+    text-align: left;
+    margin-left: 2%; 
+    margin-top: -2vh;
+    line-height: 3vh;
+    padding-right: -100%;
+    padding-left: 1vw;
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+}
+
+.gridTextTitle{
+    text-align: center;
+    margin-top: 4.5vh;
+    line-height: 3vh;
+    color: white;
+    font-size: 2vw;
+}
+
+.gridPicRight{
+    grid-column: 4 / span 1; 
+}
+
+.gridTextLeft{
+    grid-column: 1/ span 3;
+}
+
+/*edit the buttons of the text*/
+.button{
+    position: relative;
+    left: 2px;
+    background-color: rgb(255,255,255);
+    border: none;
+    border-radius: 7px;
+    color: rgb(95,158,160);
+    padding: 4px;
+    text-align: center;
+    font-size: 1vw;
+    z-index: 1;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+    font-weight: bold;
+}
+
+/*change the color of the buttons once the mouse is on top of them*/
+.button:hover {
+    background-color: rgb(95,158,160);
+    color: 	rgb(255,255,255);
+    font-family: Tahoma, "Trebuchet MS", sans-serif; 
+}
+
+/*creates a margin between the images and the text*/
+
+#imgMap{
+        margin: 15px;
+}
+
+.footerDiv{
+    
+    display: flex;
+    flex-wrap: wrap;
+/*    margin-top: 1.5%;*/
+    align-items: center;
+    justify-content: center;
+}
+/*edits the footer*/
+.footerPg{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        position: center;
+        text-align: center;
+        font-family: Tahoma, "Trebuchet MS", sans-serif;
+        background-color: rgb(95,158,160);
+        color: 	rgb(255,255,255);
+}
+
+/*edits the accessibility text and separete it in two columns*/
+.acessText{
+    column-count: 2;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    text-align: justify;
+    padding: 0% 5%;
+    column-gap: 30px;
+}
+
+/*edits the contact text*/
+.contact{
+    margin-right: 8%;
+    text-align: center;
+    list-style-type: none;
+}
+
+
+/* ----------------new sliding images------------------ */
+
+#slider{
+    overflow: hidden;
+    margin-top: 112px;
+}
+
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    margin-top: 16.8%;
+    left: 0;
+    animation: 20s slider infinite;
+}
+    
+#slider figure img{
+    width: 20%;
+    float: left;    
+}
+
+@keyframes slider{
+    0%{
+        left: 0;
+    }
+    15%{
+        left: 0;
+    }
+    
+    20%{
+        left: -100%;
+    }
+    35%{
+        left: -100%;
+    }
+    
+    40%{
+        left: -200%;
+    }
+    55%{
+        left: -200%;
+    }
+    
+    60%{
+        left: -300%;
+    }
+    75%{
+        left: -300%;
+    }
+    
+    80%{
+        left: -400%;
+    }
+    95%{
+        left: -400%;
+    }
+    
+    100%{
+        left: 0;
+    }
+}
+

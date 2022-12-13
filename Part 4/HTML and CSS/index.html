@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!-- Section contain all invisible information about the page -->
+    <head>
+        <title>Cartoon Park Home Page</title>
+        <meta charset="utf-8">
+        <meta name="description" content="This is a homepage of a cartoon website, where you can have information and purchase your ticket">
+        <meta name="author" content="Group 68 (Tutor Group 07)">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="refresh" content="600">
+        <meta name="keywords" content="cartoon Park, theme park'">
+        <!--Calling my css-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    </head>
+    
+    <!-- This body section contains the structure for all the visble content -->
+    <body>
+        <div class="bodyLayer">
+        <div class="container">
+        <header> <!-- start of the header of the page -->
+            <nav class="Mynavbar"> <!-- start of the navbar -->
+                <!--Opening times -->
+                <div id="Opening-Time">
+                    <p style="display:inline">Monday - Sunday: <time>8:00</time> - <time>22:00</time></p>
+                </div>
+                
+                <div id = "Mynavbar">
+                    <div style="min-width: 10%;">
+                    <!--Logo-->
+                        <a href="index.html" class="logo">
+                        <img src="img/CartoonPark.png" alt="Cartoon Park logo" width="60" height="60"></a>
+                    </div>
+                    <div  id="navLinks" style="min-width: 90%;" style="background: black;">
+                        <!--Home Page Button-->
+                        <a class="navSpace" href="index.html"><button id="navButtons">Cartoon Park - Home</button></a>
+
+                        <!--Events Button-->
+                        <a class="navSpace"  href="Event.html"><button id="navButtons">Events</button></a>
+
+                        <!-- Directs you to the google maps webpage with the address of the park -->
+                        <a class="navSpace" href="https://www.google.com/maps/place/Hyde+Park/@51.5072682,-0.1657303,15z/data=!4m5!3m4!1s0x0:0xd1af6c4f49b4bd0c!8m2!3d51.5072682!4d-0.1657303" target="_blank"><button id="navButtons">Location</button></a>
+                    </div>
+                </div>
+         <!-- this section is about the covid-19 update information -->
+        <div class="covidInformation">
+            <img class="attention" src="img/Exclamation.png" alt="Caution icon">
+            <span> Our Park is now open in line with the latest Goverment Guindace. Pre-booking is essential and some services may not be running as before. Learn more.</span>
+        </div> 
+            </nav><!-- / the navbar -->
+        </header> <!-- / header of the page -->
+        
+  
+        <!-- Sliding images of the event -->
+        <div id = 'slider'>
+            <figure>
+                <a href="Event.html">
+                <img src="img/Carousel1.png" alt="Carousel picture 1"></a>
+                <a href="Event.html">
+                <img src="img/Carousel2.png" alt="Carousel picture 2"></a>
+                <a href="Event.html">
+                <img src="img/Carousel3.png" alt="Carousel picture 3"></a>
+                <a href="Event.html">
+                <img src="img/Carousel4.png" alt="Carousel picture 4"></a>
+                <a href="Event.html">
+                <img src="img/Carousel5.png" alt="Carousel picture 5"></a>
+            </figure>
+        </div>
+        
+        <!-- fixed buy ticket button, showing everywhere on the page -->
+        <a href="Purchase.html" class="buyTicket">Buy Ticket</a>
+  
+        <!--this section is a Menu and containg all information about the park, each image would direct you to where you could find the information-->
+        
+        <div class="Menu">
+            <a href="" class="menuimage" style="background-color: black">
+                <img class="menuPic" src="img/rides.jpg" alt="Rides">
+                <div class="menuText">RIDES</div> 
+            </a>
+            <a href="" class="menuimage">
+                <img class="menuPic"  src="img/events.jpg" alt="EVENTS">
+                <div class="menuText">EVENTS</div>
+            </a>
+            <a href="" class="menuimage">
+                <img class="menuPic" src="img/kids.jpg" alt="Babies Feet">
+                <div class="menuText">FOR KIDS</div>
+            </a>
+    
+            <a href="" class="menuimage">   
+                <img class="menuPic" src="img/foods.jpg" alt="Foods">
+                <div class="menuText">FOODS</div>    
+            </a>
+
+            <a href="" class="menuimage">
+                <img class="menuPic" src="img/shops_and_gifts.jpg" alt="Three Gifts">
+                <div class="menuText">SHOPS & GIFTS</div>
+            </a>
+            <a href="" class="menuimage" >
+                <img class="menuPic" src="img/parking.jpg" alt="Cars Parking">
+                <div class="menuText">
+                    PARKING
+                </div>
+            </a>
+            <a href="" class="menuimage">
+                <img class="menuPic" src="img/hotels.jpg" alt="HOTELS">
+                <div class="menuText">HOTELS</div>
+            </a>
+        </div><br/>
+
+        <!--this section is the map of the whole park showing each zone.-->
+        <div id="map">
+            <img class="mapP" src="img/theme_park_map.jpg" width= "85%" height= "10%" usemap="#localMap" alt="theme park map">
+            <map name="localMap">
+                <area shape="circle" coords="160,180,70" alt="Forbidden Valley" href="#Forbidden Valley">
+                <area shape="circle" coords="150,290,60" alt="Gloomy Wood" href="#Gloomy Wood">
+                <area shape="circle" coords="670,360,70" alt="Adventure Land" href="#Adventure Land">
+                <area shape="circle" coords="162,375,70" alt="Katanga Canyon" href="#Katanga Canyon">
+                <area shape="circle" coords="843,272,70" alt="X-Sector" href="#X-Sector">
+                <area shape="circle" coords="720,120,90" alt="Cred Street" href="#Cred Street">
+                <area shape="circle" coords="490,100,80" alt="UG-Land" href="#UG-Land">
+                <area shape="circle" coords="300,312,70" alt="Merrie England" href="#Merrie England">
+                <area shape="circle" coords="503,452,70" alt="MucDonald's farmyard" href="#MucDonald's farmyard">
+                <area shape="circle" coords="503,352,70" alt="Towers Street" href="#Towers Street">
+            </map>
+        </div>
+
+        <br/>
+        
+        <!--     descriptions of different events-->
+        <div>
+            <div class="gridContainer gridGradientleft">
+                <img id="Forbidden Valley" class="gridPicLeft gridImg" src="https://i.ytimg.com/vi/LDxG4p121Ks/hqdefault.jpg" alt = 'Forbidden Vally Image'>
+                <div id="textMap" class="gridTextRight">
+                    <h3 class="gridTextTitle">Forbidden Valley</h3>
+                    <p class="gridText">Archeologist Adam follows his father’s footsteps, hoping to find the mysterious Valley. On the long road to the cherished dream, various adventures and dangers, acquaintances and conflicts, secrets and puzzles await him. What is hidden in the ancient Forbidden Valley? This and many other secrets you will reveal!<button class="button">LEARN MORE</button></p>
+                </div>
+            </div>
+            <div id="Gloomy Wood" class="gridContainer gridGradientright">
+                <div id="textMap" class="gridTextLeft">
+                    <h3 class="gridTextTitle">Gloomy Wood</h3> 
+                    <p class="gridText">Set deep within the ancient woodland of Alton Towers, Gloomy Wood is home to many of the park’s ghouls and goblins, who like.<button class="button">LEARN MORE</button></p>
+                </div>
+                <img class="gridPicRight gridImg" src="img/gloomy_wood.png" alt = 'Gloomy Wood Image'>
+            </div>
+            <div id="Adventure Land" class="gridContainer gridGradientleft">
+                <img class="gridPicLeft gridImg" src="img/Adventure%20Land.jpg" alt = 'Adventure Land'>
+                <div id="textMap" class="gridTextRight">
+                    <h3 class="gridTextTitle">Adventure Land</h3>
+                    <p class="gridText">In Adventure Land, King Agamis rules from his castle. Rich cities, vast forests and rugged mountain ranges dominate the country. The large river is known to be lined with gold and the forests filled with medicinal herbs, but dangers lurk beneath the fog! Only the bravest adventurers dare to face the challenges. When you move your adventurer tactically and bravely fight the fog creatures, you'll win the favor of the king.<button class="button">LEARN MORE</button></p> 
+                </div>
+            </div>
+            <div id="UG-Land" class="gridContainer gridGradientright">
+                <div id="textMap" class="gridTextLeft">
+                    <h3 class="gridTextTitle">UG-Land</h3>
+                    <p class="gridText">Looking for family-friendly rides and attractions? UG-Land has something for everyone!Whether it's a high-flying adventure on Merlin's Mayhem, a pacific-themed getaway in Duke's Lagoon, or a prehistoric expedition on Exploration Island, the kingdom has a royal adventure waiting for you!<button class="button">LEARN MORE</button></p>
+                </div>
+                <img class="gridPicRight gridImg" src="https://www.ocregister.com/wp-content/uploads/2018/07/0708_FEA_OCR-L-DIS-NILES-01.jpg?w=1860" alt = 'Cred Street Image'>
+            </div>
+            <div id="Cred Street" class="gridContainer gridGradientleft">
+                <a>
+                    <img class="gridPicLeft gridImg" src="https://d302e0npexowb4.cloudfront.net/wp-content/uploads/2017/01/5450ce1c6995b-polin-cartoon-network-amazone-wwa-award-2014.jpg" alt = 'Cred Street Image'>
+                </a>
+                <div id="textMap" class="gridTextRight">
+                    <h3 class="gridTextTitle">Cred Street</h3>
+                    <p class="gridText">Meet and greets’ with characters from Cartoon Network will be a highlight! You will never want to miss this chance. Come on and have fun with all of characters in fairy tale!<button class="button">LEARN MORE</button></p> 
+                </div>
+            </div>
+        </div>
+        
+         <footer class="footerPg">
+             <div class="footerDiv">
+                <!--this section talks about accessibility,  we used bootstrap to separeted in columns -->
+                <div  class="footerPg" style="max-width: 67%" >
+                    <h3 style = "padding: 0% 31%">Accessibility Information</h3>
+                    <p class="acessText">At most of our attractions, the queue experience is an important part of telling the story of the overall attraction experience. All attraction queues are accessible to guests using manual wheelchairs (with the exception of Pteranodon Flyers™ in Universal's Islands of Adventure™—see an Attractions Attendant for assistance). There are specific boarding requirements and accommodations for those using wheelchairs at each attraction. If you’re capable of transferring to the ride vehicle seat either by yourself or with the assistance of someone in your party, you may transfer. To see a list of requirements and accommodations for all attractions, please speak with an attendant or see the <a href="#accessibility">Guide for Rider Safety and Accessibility</a></p>
+                </div>
+                <!--this is the footer with the contact and social media,  we used bootstrap to separeted in columns -->
+                <div class="footerPg" id="contactUS" style="min-width: 10%">
+                     <!-- We created a list and used differents ids to make it easier to find it -->
+                    <ul class="contact">
+                                Contact us: 
+                        <li id="number">Customer Helpline: 44 020 xxxx xxxx</li>
+                        <li id="email">E-mail: cartoonpark@gm.co</li>
+                        <li id="license">License Number: xxxxxx-xxx</li>
+                        <li id="Follow us" style="margin:10px;">            Follow us:
+                    <img src="img/Insta.svg" alt="Instagram Logo" width="30" height="30">
+                    <img src="img/Twitter.svg" alt="Twitter Logo" width="30" height="30">
+                    <img src="img/Face.svg" alt="Facebook Logo" width="30" height="30"></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        </div>
+        </div>
+        
+    </body>
+    
+</html>
